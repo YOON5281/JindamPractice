@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  width: 100%;
+  height: 3000px;
+}
+
+.inner {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+#header {
+  position: absolute;
+  margin: 0 auto;
+  top: 20px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.logo {
+  color: #fff;
+  float: left;
+}
+.navbar {
+  display: flex;
+  float: right;
+}
+.navbar a {
+  margin-left: 60px;
+  color: #fff;
+}
+.navbar a:hover {
+  color: orange;
+  cursor: pointer;
+}
+.background_video {
+  width: 100%;
+  height: 1200px;
+  /* border: 1px solid red; */
+  background-image: url(./img/Video.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.video_letter {
+  position: relative;
+  top: 300px;
+  width: 550px;
+  /* border: 1px solid red; */
+}
+.video_letter h3 {
+  font-size: 100px;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 200;
+}
+.video_letter h2 {
+  font-size: 100px;
+  font-family: "Red Hat Display", sans-serif;
+}
+.video_letter img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.video_letter p {
+  font-size: 20px;
+}
+.sec_background {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  /* border: 1px solid red; */
+}
+.sec_background .inner {
+  position: relative;
+  top: 30%;
+  /* border: 1px solid green; */
+  margin: 0 auto;
+  text-align: center;
+  animation-name: fadeUp;
+}
+.sec_background .inner .dot {
+  color: gray;
+  font-size: 60px;
+}
+.sec_background .inner .contents {
+  font-family: "Red Hat Display", sans-serif;
+}
+.sec_background .inner p {
+  margin-top: 20px;
+  line-height: 25px;
+}
+.third_background {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  /* border: 1px solid red; */
+}
+.third_background .num {
+  font-weight: lighter;
+}
+
+.third_background h3 {
+  display: inline;
+  margin-left: 10%;
+  font-size: 40px;
+  font-weight: lighter;
+  /* font-family: "Red Hat Display", sans-serif; */
+}
+.aline {
+  height: 100px;
+  line-height: 100px;
+}
+
+.third_background h3 span {
+  font-weight: bolder;
+}
+.third_background .storybased {
+  background-color: #000000;
+  color: #fff;
+  padding: 5px;
+}
+.fourth_background {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-color: #f4f4f4;
+}
+.fourth_background .contents {
+  position: relative;
+  top: 100px;
+
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 36px;
+}
+.fourth_background .contents span {
+  font-weight: bolder;
+}
+.smallIcons {
+  display: none;
+}
+.largeIcons {
+  display: block;
+}
+
+.largeIcons .col {
+  position: relative;
+  top: 200px;
+  height: 100px;
+  /* border: 1px solid red; */
+  text-align: center;
+  padding: 10px;
+}
+
+@media all and (max-width: 768px) {
+  .wrap {
+    width: 1400px;
+    /* height: 3000px; */
+  }
+  .inner {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #header {
+    position: absolute;
+    margin: 0 auto;
+    top: 20px;
+    left: 150px;
+    right: 0;
+  }
+  .navbar div {
+    margin-left: 30px;
+    color: #fff;
+  }
+  .largeIcons {
+    display: none;
+  }
+  .smallIcons {
+    display: block;
+  }
+  .smallIcons .col {
+    position: relative;
+    top: 200px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    text-align: center;
+  }
+}

@@ -15,8 +15,10 @@ $(document).ready(function () {
         const height = $(window).scrollTop();
 
         if (height > 800) {
+          $(".dot").removeClass("fadeDown").addClass("fadeUp");
           $("#enComment").removeClass("fadeDown").addClass("fadeUp");
         } else {
+          $(".dot").removeClass("fadeUp").addClass("fadeDown");
           $("#enComment").removeClass("fadeUp").addClass("fadeDown");
         }
 
@@ -100,8 +102,10 @@ $(document).ready(function () {
       } else {
         const height = $(window).scrollTop();
         if (height > 180) {
+          $(".dot").removeClass("fadeDown").addClass("fadeUp");
           $("#enComment").removeClass("fadeDown").addClass("fadeUp");
         } else {
+          $(".dot").removeClass("fadeUp").addClass("fadeDown");
           $("#enComment").removeClass("fadeUp").addClass("fadeDown");
         }
 
@@ -203,7 +207,7 @@ $(document).ready(function () {
             .addClass("fadeDown");
         }
 
-        console.log("작은 " + height);
+        // console.log("작은 " + height);
       }
     });
   };

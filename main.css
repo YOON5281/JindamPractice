@@ -5,12 +5,11 @@
 
 .wrap {
   width: 100%;
-  height: 3000px;
 }
 
 .inner {
   position: relative;
-  width: 1400px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -32,7 +31,7 @@
   float: right;
 }
 .navbar a {
-  margin-left: 60px;
+  margin-left: 20px;
   color: #fff;
 }
 .navbar a:hover {
@@ -52,7 +51,6 @@
   position: relative;
   top: 300px;
   width: 550px;
-  /* border: 1px solid red; */
 }
 .video_letter h3 {
   font-size: 100px;
@@ -71,19 +69,31 @@
 .video_letter p {
   font-size: 20px;
 }
+.vl1 {
+  display: none;
+}
+.vl2 {
+  display: none;
+}
+.vl3 {
+  display: none;
+}
+.vl4 {
+  display: none;
+}
 .sec_background {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 400px;
+  margin: 10% 0;
   /* border: 1px solid red; */
 }
 .sec_background .inner {
   position: relative;
-  top: 30%;
+
   /* border: 1px solid green; */
   margin: 0 auto;
   text-align: center;
-  animation-name: fadeUp;
 }
 .sec_background .inner .dot {
   color: gray;
@@ -96,10 +106,12 @@
   margin-top: 20px;
   line-height: 25px;
 }
+
 .third_background {
   position: relative;
   width: 100%;
   height: 600px;
+  margin: 10% 0;
   /* border: 1px solid red; */
 }
 .third_background .num {
@@ -135,7 +147,6 @@
 .fourth_background .contents {
   position: relative;
   top: 100px;
-
   text-align: center;
   font-family: "Red Hat Display", sans-serif;
   font-size: 36px;
@@ -158,39 +169,109 @@
   text-align: center;
   padding: 10px;
 }
+.largeIcons .col img {
+  width: 80px;
+}
+footer {
+  width: 100%;
+  height: 300px;
+}
 
 @media all and (max-width: 768px) {
-  .wrap {
-    width: 1400px;
-    /* height: 3000px; */
-  }
-  .inner {
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-  }
-  #header {
-    position: absolute;
-    margin: 0 auto;
-    top: 20px;
-    left: 150px;
-    right: 0;
-  }
   .navbar div {
     margin-left: 30px;
     color: #fff;
+    display: none;
   }
+  .logo {
+    font-size: 2em;
+  }
+  .background_video {
+    height: 400px;
+
+    border: 1px solid green;
+  }
+
+  .video_letter {
+    position: relative;
+    top: 130px;
+    width: 180px;
+
+    /* border: 1px solid red; */
+  }
+
+  .video_letter h3 {
+    font-size: 30px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 200;
+  }
+  .video_letter h2 {
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+  }
+  .video_letter img {
+    position: absolute;
+    width: 60px;
+    top: 57%;
+    right: 0;
+  }
+  .video_letter p {
+    font-size: 15px;
+  }
+
+  .sec_background .inner .contents {
+    font-size: 1.5em;
+  }
+  .sec_background .inner p {
+    font-size: 1em;
+  }
+  .third_background h3 {
+    font-size: 20px;
+  }
+  .aline {
+    height: 50px;
+    line-height: 50px;
+  }
+  .third_background {
+    height: 300px;
+  }
+
+  .fourth_background .contents {
+    width: 100%;
+    font-size: 1.6em;
+    /* border: 1px solid red; */
+  }
+
   .largeIcons {
     display: none;
   }
   .smallIcons {
     display: block;
   }
+  .smallIcons .row {
+    margin: 10px 0;
+  }
   .smallIcons .col {
     position: relative;
-    top: 200px;
+    top: 170px;
     /* border: 1px solid red; */
     padding: 10px;
     text-align: center;
   }
+
+  .smallIcons .col img {
+    width: 70px;
+  }
+}
+
+.fadeDown {
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 1s;
+}
+
+.fadeUp {
+  opacity: 1;
+  transform: translateY(-30px);
+  transition: all 1s;
 }
